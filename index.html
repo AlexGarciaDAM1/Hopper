@@ -47,7 +47,7 @@
         <button onclick="mostrarApartado('pagina-principal')">Pagina principal</button>
         <button onclick="mostrarApartado('comentarios')">Comentarios</button>
         <button onclick="mostrarApartado('cuenta')">Cuenta</button>
-        <button onclick="mostrarApartado('administrador')">Modelo entidad-relación</button>
+        <button onclick="mostrarApartado('administrador')">Administrador</button>
 
     </nav>
     <div class="container">
@@ -93,9 +93,12 @@
             <p>Y para iniciar como admin tenemos esta pagina, donde al igual que en la anterior, podremos entrar con el usuario y la contraseña</p>
         </section>
         <section id="pagina-principal" class="hidden">
-            <h1>Base de datos</h1>
+            <h1>Pagina principal</h1>
             <img src="imagenes/PaginaPrincipal.png" alt="Pagina principal de Hopper" class="imagen-centrada">
             <p>La pagina principal del programa, desde aqui se podran acceder a todas las funciones del programa.</p>
+            <br>
+            <img src="imagenes/PaginaPrincipal7.png" alt="Label cuenta" class="imagen-centrada">
+            <p>Este label se actualiza con el nombre del usuario conectado y si se pulsa, lleva a la cuenta del usuario</p>
             <br>
             <img src="imagenes/PaginaPrincipal2.png" alt="Botones para avanzar y retroceder en la lista de publicaciones" class="imagen-centrada">
             <p>Con los botones de anterior y siguiente podremos movernos entre todas las publicaciones realizadas.</p>
@@ -104,7 +107,7 @@
             <p>Con el boton de comentar podras añadir un comentario a la publicacion que estes viendo, el cual se añadira a la lista de comentarios que podras ver con el boton "ver comentarios"</p>
             <br>
             <img src="imagenes/PaginaPrincipal4.png" alt="Informacion del usuario" class="imagen-centrada">
-            <p>Labels que se actualizan con el nombre del usuario y la fecha en la que se hizo la publicacion</p>
+            <p>Label que se actualizan con el nombre del usuario que hizo la publicacion, si lo pulsas, visitas la cuenta de ese usuario</p>
             <br>
             <img src="imagenes/PaginaPrincipal5.png" alt="Informacion del usuario" class="imagen-centrada">
             <p>Con el boton de publicar podremos añadir una publicacion a la lista para que los usuarios puedan verla, con el boton de cerrar sesion saldremos de la cuenta y volvermos a la pagina inicial</p>
@@ -113,18 +116,50 @@
             <p>El boton de borrar solo sera visible en caso de ser administrador, y con el podremos borrar las publicaciones que consideremos inadecuadas</p>
 
         </section>
+        <section id="comentarios" class="hidden">
+            <h1>Comentarios</h1>
+            <img src="imagenes/Comentario1.PNG" alt="Pagina de ver comentarios">
+            <p>Esta es la pagina para ver los comentarios de una publicacion a la que se llega a traves del boton "ver comentarios" de la pagina principal</p>
+            <br>
+            <img src="imagenes/Comentario2.PNG" alt="Botones ver comentarios">
+            <p>Al igual que con las publicaciones, podras moverte por los comentarios usando los botones siguiente y anterior, ademas, con el boton Salir podras volver a la pagina principal</p>
+            <br>
+            <img src="imagenes/Comentario3.PNG" alt="Pagina crear comentarios">
+            <p>Y para añadir un comentario a una publicacion, entraremos a este apartado pulsando Comentar, y despues de añadir el texto que quieras escribir, volveremos a pulsar comentar.</p>
+            <br>
+            
+            
+        </section>
         <section id="cuenta" class="hidden">
             <h1>Cuentas de usuario</h1>
             <img src="imagenes/Usuario1.png" alt="Pagina de usuario principal">
-            <p>Aqui podemos ver la pagina de la cuenta del usuario</p>
+            <p>Aqui podemos ver la cuenta del usuario, en ella te podras mover entre las publicaciones que hayan sido creadas por el usuario</p>
             <br>
             <img src="imagenes/Usuario2.png" alt="Pagina de usuario principal">
-            <p>Esta seccion funciona igual que la de la pagina principal, solo que en este caso, mostrando solo las publicaciones del usuario que estemos viendo</p>
+            <p>Si la cuenta es la del usuario con el que estamos conectados, tendremos los botones de Modificar cuenta, que nos llevara a una seccion donde modificar la informacion de nuestro usuario y Lista de amigos, donde veremos los usuarios que hayamos añadido como amigos</p>
             <br>
-            <img src="imagenes/Usuario2.png" alt="Pagina de usuario principal">
-            <p>Esta seccion funciona igual que la de la pagina principal, solo que en este caso, mostrando solo las publicaciones del usuario que estemos viendo</p>
+            <img src="imagenes/Usuario3.PNG" alt="Pagina de usuario principal">
+            <p>Esta es la cuenta de un usuario distinto, en vez de poder modificar informacion, tenemos un boton para añadirlo a nuestra lista de amigos, de igual manera tambien podremos ver su lista de amigos</p>
+            <br>
+            <img src="imagenes/Usuario4.PNG" alt="Pagina de cambio de datos">
+            <p>En esta seccion podremos cambiar la informacion de nuestro usuario, cambiamos cualquier dato y si la contraseña y la repeticion coinciden, se realizara el cambio</p>
+            <br>
+            <img src="imagenes/Usuario5.PNG" alt="Lista amigos">
+            <p>En la lista de amigos, podremos pulsar el boton de ver lista y esta se actualizara con los nombres de todos los usuarios que esten añadidos como amigos</p>
             <br>
             
+        </section>
+        <section id="administrador" class="hidden">
+            <h1>Administrador</h1>
+            <img src="imagenes/Admin1.PNG" alt="Inicio de administrador">
+            <p>Si desde la pagina de inicio damos a iniciar como administrador nos llevara al login para poder entrar como admin</p>
+            <br>
+            <img src="imagenes/Admin2.PNG" alt="Pagina principal admin">
+            <p>Desde la pagina principal podremos borrar la publicacion que estemos viendo actualmente y todos los comentarios relacionados a este</p>
+            <br>
+            <img src="imagenes/Admin3.PNG" alt="Vista cuenta admin">
+            <p>Si vemos desde la vista de una cuenta podremos borrar una publicacion como en la pagina principal, o borrar la cuenta de ese usuario al completo</p>
+            <br>
         </section>
     </div>
 
